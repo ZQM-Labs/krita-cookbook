@@ -18,7 +18,8 @@ test("every SVG color is declared in the shared palette", () => {
     .map(([color]) => color.toLowerCase());
   assert.ok(used.length > 0, "sprite should use explicit palette colors");
   assert.ok(used.every((color) => allowed.has(color)), "SVG uses a color outside palette.json");
-  assert.equal(new Set([...allowed]).size, allowed.size, "palette color values should be unique");
+  const paletteColors = Object.values(palette.colors).map((color) => color.toLowerCase());
+  assert.equal(new Set(paletteColors).size, paletteColors.length, "palette color values should be unique");
 });
 
 test("palette export contract includes transparent PNG and WebP variants", () => {
