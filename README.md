@@ -15,7 +15,7 @@ A **Krita cookbook** for game art: sprites, textures, animation frames, and expo
 
 ## Repository role and status
 
-**Status:** Active, public — seeding. Pattern passes land in follow-up work; the table below lists what is planned, not what is already written.
+**Status:** Active, public — first sprite source and export manifest implemented. The automated contract checks do not launch Krita or certify visual quality.
 
 **What this repository is:** Krita patterns — sprites, textures, animation frames, and export pipelines for game art.
 
@@ -33,20 +33,37 @@ Game developers and artists producing 2D game art in Krita, especially sprites a
 - Synthetic reference art for the examples
 - A game client that can load the exported PNG/WebP art
 
-## Patterns (planned)
+## Patterns
 
-| # | Example | What it will demonstrate |
-|---|---------|--------------------------|
-| 01 | `01-first-sprite` | A first game sprite: canvas setup, layers, and export to PNG/WebP |
-| 02 | `02-texture-workflows` | Seamless textures and tileable surfaces for game worlds |
-| 03 | `03-animation-frames` | Frame-by-frame sprite animation with onion skin and export |
-| 04 | `04-palette-pipeline` | Palettes, brushes, and export presets shared across a game's art set |
+| # | Example | Status | What it demonstrates |
+|---|---------|--------|----------------------|
+| 01 | `01-first-sprite` | Implemented source/manifest | Transparent lantern SVG source, shared palette, intended PNG/WebP export sizes, and automated contract checks |
+| 02 | `02-texture-workflows` | Planned | Seamless textures and tileable surfaces for game worlds |
+| 03 | `03-animation-frames` | Planned | Frame-by-frame sprite animation with onion skin and export |
+| 04 | `04-palette-pipeline` | Planned | Palettes, brushes, and export presets shared across a game's art set |
+
+## Quick start
+
+Requires Node.js 20+ for the source contract tests:
+
+```sh
+cd examples/01-first-sprite
+npm test
+```
+
+Open `examples/01-first-sprite/lantern.svg` in Krita to rasterize and edit the source. See that pattern's README for the intended export contract and limitations.
 
 ## Repository layout
 
 ```text
 krita-cookbook/
-├── examples/  # one directory per pattern
+├── .github/workflows/examples.yml
+├── examples/01-first-sprite/
+│   ├── lantern.svg
+│   ├── palette.json
+│   ├── sprite-contract.test.mjs
+│   ├── package.json
+│   └── README.md
 ├── README.md
 └── LICENSE
 ```
