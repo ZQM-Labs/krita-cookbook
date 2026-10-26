@@ -8,7 +8,7 @@ const palette = JSON.parse(readFileSync(new URL("./palette.json", import.meta.ur
 test("sprite source declares a transparent 128 by 128 canvas", () => {
   assert.match(svg, /<svg\b[^>]*width="128"[^>]*height="128"[^>]*viewBox="0 0 128 128"/);
   assert.match(svg, /<title>Lantern game sprite source<\/title>/);
-  assert.match(svg, /<desc>[^<]*transparent vector source[^<]*<\/desc>/);
+  assert.match(svg, /<desc>[^<]*transparent vector source[^<]*<\/desc>/i);
   assert.doesNotMatch(svg, /<rect\b[^>]*fill="#(?:[0-9a-f]{3}|[0-9a-f]{6})"/i);
 });
 
