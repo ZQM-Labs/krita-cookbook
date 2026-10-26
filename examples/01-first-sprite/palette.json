@@ -1,0 +1,34 @@
+{
+  "name": "ZQM Lantern Starter",
+  "version": 1,
+  "colors": {
+    "outline": "#202938",
+    "metalAndAccent": "#F6B84A",
+    "glass": "#FFE8A3",
+    "flame": "#FFF9DB"
+  },
+  "canvas": {
+    "width": 128,
+    "height": 128,
+    "background": "transparent"
+  },
+  "exports": [
+    {
+      "format": "png",
+      "sizes": [
+        32,
+        64,
+        128
+      ],
+      "alpha": true
+    },
+    {
+      "format": "webp",
+      "sizes": [
+        64,
+        128
+      ],
+      "alpha": true
+    }
+  ]
+}

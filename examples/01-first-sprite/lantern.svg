@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <title>Lantern game sprite source</title>
+  <desc>Transparent vector source for a small lantern icon. Import into Krita, rasterize, and export at target sprite sizes.</desc>
+  <g stroke="#202938" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M46 31 C46 9 82 9 82 31" fill="none"/>
+    <path d="M39 35 H89 L96 47 V96 L86 108 H42 L32 96 V47 Z" fill="#F6B84A"/>
+    <path d="M43 48 H85 V91 L78 100 H50 L43 91 Z" fill="#FFE8A3" stroke-width="3"/>
+    <path d="M55 56 V91 M73 56 V91" fill="none" stroke="#F6B84A" stroke-width="4"/>
+    <path d="M28 45 H100 M39 110 H89" fill="none"/>
+  </g>
+  <path d="M64 56 C54 68 56 79 64 84 C72 79 74 68 64 56 Z" fill="#FFF9DB"/>
+  <path d="M64 67 C60 73 61 78 64 80 C67 78 68 73 64 67 Z" fill="#F6B84A"/>
+</svg>

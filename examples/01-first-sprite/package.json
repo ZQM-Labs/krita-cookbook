@@ -1,0 +1,11 @@
+{
+  "name": "zqm-krita-first-sprite-example",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test sprite-contract.test.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
