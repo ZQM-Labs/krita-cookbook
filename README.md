@@ -29,7 +29,7 @@ Game developers and artists producing 2D game art in Krita, especially sprites a
 
 ## Prerequisites
 
-- Krita 5.3.4.1 (fleet-verified on Node-1; version pinned per pattern at fill time)
+- Krita 5.3.4.1 (as of Oct 2026; verify the current version before use) (fleet-verified on Node-1; version pinned per pattern at fill time)
 - Synthetic reference art for the examples
 - A game client that can load the exported PNG/WebP art
 
