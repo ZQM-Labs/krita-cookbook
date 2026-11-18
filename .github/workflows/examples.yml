@@ -16,7 +16,7 @@ concurrency:
 jobs:
   sprite-contract:
     name: Sprite source contract (Node.js 20)
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, Linux, X64, zqm-linux]
     defaults:
       run:
         working-directory: examples/01-first-sprite
